@@ -1,5 +1,6 @@
-from flask import Flask, redirect, url_for, render_template
 import os
+
+from flask import Flask, redirect, render_template, url_for
 
 
 def create_app(test_config=None):
