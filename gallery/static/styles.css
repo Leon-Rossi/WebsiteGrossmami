@@ -1,0 +1,106 @@
+:root {
+    --primary: #404040;
+    --secundary: lightblue;
+    --accent: red;
+body {
+    background-color: var(--primary);
+    color: var(--secundary);
+    font-family: "papyrus";
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: var(--secundary)
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: xxx-large;
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+    text-align: justify;
+}
+
+.textblock {
+    padding: 1% 5%;
+}
+
+img.portrait {
+    display: flex;
+    margin: auto;
+}
+
+.gallery {
+    align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1% 1%;
+}
+
+.gallery div {
+    align: center;
+    width: 50%;
+}
+
+.gallery img {
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.gallery a {
+    text-decoration-line: none;
+    color: var(--secudary)
+}
+
+.gallery p {
+    text-align: center;
+}
+
+.container {
+    align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 1% 1%;
+}
+
+.container div {
+    align: center;
+    width: 33%;
+}
+
+ul.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul.navbar li a {
+    text-decoration-line: none;
+    color: var(--accent);
+    font-size: large;
+    padding: 10px;
+}
+
+ul.navbar li a.active {
+    border-bottom-style: solid;
+}

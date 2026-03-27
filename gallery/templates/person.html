@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% set currentNavElement = "Person" %}
+    {% include 'navbar.html'%}
+    <div class="container">
+        <div class="textblock">
+            <h1>Marianne Zuppinger</h1>
+            <p>In Zürich geboren und in einem kunstgeprägten Umfeld aufgewachsen. Abgeschlossenes Studium an der Neuen Kunstschule Zürich.</p>
+            <p>Stetige Weiterbildung an vielen Schulen und in verschiedenen Ateliers für bildende Künste, daneben starkes autodidaktisches Schaffen. Verschiedene Studienreisen in Holland, Frankreich und Italien.</p>
+            <p>Lebte und arbeitete lange Zeit in Luzern. Seit 2006 am Hallwylersee wohnhaft.</p>
+        </div>
+        <div>
+            <img class="portrait" src="{{ url_for('static', filename='portrait.jpg') }}", alt="Portrait">
+        </div>
+        <div class="textblock">
+            <h1>Gedanken zu Kreativität</h1>
+            <p>Ich betrachte Kreativität als Auseinandersetzung mit meiner Umwelt, dem Umweltgeschehen und mit mir selbst. Kreativität ist ein dauerndes Suchen und Finden, Loslassen und Geschehen lassen.</p>
+            <p>Wird Kreativität unter Anwendung diverser Materialien nach Aussen getragen, wandelt sie sich in Kunst. Diese verbindet, schafft Kontakt  zwischen Künstler und Kunstaufnehmenden und fördert dadurch die zwischenmenschliche Verständigung. In und mit Kreativität zu leben und diese weiterzugeben ist meine Lebensphilosophie und Ziel.</p>
+            <p>Meine Bilder und kreative Träume wachsen auf Streifzügen durch die Natur, in der Stille und im Alleinsein.</p>
+        </div>
+    </div>
+
+</body>
+</html>

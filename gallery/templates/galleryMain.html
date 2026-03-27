@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        {% set currentNavElement = "Werke" %}
+        {% include 'navbar.html' %}
+        <h3>
+            Kategorien
+            <h3>
+                <div class="gallery">
+                    {% for file in files %}
+                        {% set name = file[0] %}
+                        {% set name = name[name.find("/")+1:] %}
+                        {% set name = name[:name.find("/")] %}
+                        <div>
+                            <a href="{{ url_for('werke', category = name) }}">
+                                <img class="gallery" src="{{ url_for('static', filename=file[0]) }}">
+                                <p>{{ file[1] }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </body>
+        </html>

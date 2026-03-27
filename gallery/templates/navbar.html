@@ -1,0 +1,29 @@
+<div class="container">
+    <div>
+        <ul class="navbar">
+            <li>
+                <a {% if currentNavElement == "Person" %}class="active"{% endif %}
+                   href="{{ url_for("person") }}">Person</a>
+            </li>
+            <li>
+                <a {% if currentNavElement == "Kurse" %}class="active"{% endif %}
+                   href="{{ url_for("kurse") }}">Kurse</a>
+            </li>
+            <li>
+                <a {% if currentNavElement == "Kontakt" %}class="active"{% endif %}
+                   href="{{ url_for("kontakt") }}">Kontakt</a>
+            </li>
+            <li>
+                <a {% if currentNavElement == "Werke" %}class="active"{% endif %}
+                   href="{{ url_for("werkeMain") }}">Werke</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="{{ url_for("person") }}">
+            <h2>Marianne Zuppinger</h2>
+        </li>
+    </a>
+</div>
+<div></div>
+</div>
